@@ -7,13 +7,13 @@
 require_once('./dbshoes.php');
 
  ?>
-<link rel="stylesheet" href="AdidasOzwegoo style.css">
+<link rel="stylesheet" href="adidas-ozwegoo.css">
 <link rel="icon" href="image/Icon.png" type="image/gif" sizes="16x16">
 <body class="webpage">
 	<div>
 		<div class="header"> 
 				
-			<a href="Assigment 2 listpage1.php"><img src="image/logo.png" alt="loading" class="logo"></a>
+			<a href="listpage1.php"><img src="image/logo.png" alt="loading" class="logo"></a>
 			<input type="text" class="search" placeholder="search">
 		</div>
 		<div class="left">
@@ -44,7 +44,7 @@ require_once('./dbshoes.php');
 			<div class="font" align="center">Price: $<?=$rows[0][5]?> </div>
 			 <br>
 			
-			<div align="center"><a href="Cart.php?productid=<?=$productid[$i][0]?>"><input type="submit" value="Add to cart" name="add"  onclick="myFunction()" ></a> </div>
+			<div align="center"><a href="cart.php?productid=<?=$productid[$i][0]?>"><input type="submit" value="Add to cart" name="add"  onclick="myFunction()" ></a> </div>
 		<?php } ?>
 			<div id="snackbar">Added to cart!</div>
 		
