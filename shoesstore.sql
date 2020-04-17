@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Aug 25, 2019 at 04:59 PM
--- Server version: 10.3.16-MariaDB
--- PHP Version: 7.3.7
+-- Host: localhost
+-- Generation Time: Apr 17, 2020 at 10:38 PM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -21,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `shoesstore`
 --
-CREATE DATABASE IF NOT EXISTS `shoesstore` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `shoesstore`;
 
 -- --------------------------------------------------------
 
@@ -30,7 +27,6 @@ USE `shoesstore`;
 -- Table structure for table `account`
 --
 
-DROP TABLE IF EXISTS `account`;
 CREATE TABLE `account` (
   `id` int(11) NOT NULL,
   `usernames` varchar(200) DEFAULT NULL,
@@ -50,7 +46,6 @@ INSERT INTO `account` (`id`, `usernames`, `password`) VALUES
 -- Table structure for table `cart`
 --
 
-DROP TABLE IF EXISTS `cart`;
 CREATE TABLE `cart` (
   `ProductId` int(11) NOT NULL,
   `quantity` int(11) DEFAULT NULL
@@ -69,7 +64,6 @@ INSERT INTO `cart` (`ProductId`, `quantity`) VALUES
 -- Table structure for table `category`
 --
 
-DROP TABLE IF EXISTS `category`;
 CREATE TABLE `category` (
   `CatId` int(11) NOT NULL,
   `CatName` varchar(100) NOT NULL
@@ -89,7 +83,6 @@ INSERT INTO `category` (`CatId`, `CatName`) VALUES
 -- Table structure for table `color`
 --
 
-DROP TABLE IF EXISTS `color`;
 CREATE TABLE `color` (
   `colorid` int(11) NOT NULL,
   `color` varchar(20) DEFAULT NULL
@@ -109,7 +102,6 @@ INSERT INTO `color` (`colorid`, `color`) VALUES
 -- Table structure for table `customer`
 --
 
-DROP TABLE IF EXISTS `customer`;
 CREATE TABLE `customer` (
   `CusId` int(11) NOT NULL,
   `FullName` varchar(100) NOT NULL,
@@ -158,7 +150,6 @@ INSERT INTO `customer` (`CusId`, `FullName`, `Address`, `Phone`, `Email`) VALUES
 -- Table structure for table `orderdetail`
 --
 
-DROP TABLE IF EXISTS `orderdetail`;
 CREATE TABLE `orderdetail` (
   `OrderId` int(11) NOT NULL,
   `ProductId` int(11) DEFAULT NULL,
@@ -178,7 +169,6 @@ INSERT INTO `orderdetail` (`OrderId`, `ProductId`, `Quantity`) VALUES
 -- Table structure for table `orders`
 --
 
-DROP TABLE IF EXISTS `orders`;
 CREATE TABLE `orders` (
   `OrderId` int(11) NOT NULL,
   `CusId` int(11) DEFAULT NULL,
@@ -198,7 +188,6 @@ INSERT INTO `orders` (`OrderId`, `CusId`, `Total`) VALUES
 -- Table structure for table `product`
 --
 
-DROP TABLE IF EXISTS `product`;
 CREATE TABLE `product` (
   `ProductId` int(11) NOT NULL,
   `colorid` int(20) DEFAULT NULL,
@@ -215,15 +204,15 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`ProductId`, `colorid`, `ProductName`, `Image1`, `Image2`, `Price`, `descriptions`, `CatId`) VALUES
-(3, 2, 'ADIDAS OZWEEGO (BLACK)', 'image/shoes/B_ozweego.png', 'image/shoes/B_OzweegoStory.jpg', 100, 'Inspired by the original 1998 model, OZWEEGO reinvents iconic design elements for the present. This silhouette pays homage to the lightweight and comfortable 90?s cushion runner, offering a new interpretation from the adidas archive.', 1),
-(4, 1, 'ADIDAS OZWEEGO (BLACK LIGHT)', 'image\\shoes\\BL_ozweego.jfif', 'image\\shoes\\BL_Ozweego.jpg', 100, 'Inspired by the original 1998 model, OZWEEGO reinvents iconic design elements for the present. This silhouette pays homage to the lightweight and comfortable 90’s cushion runner, offering a new interpretation from the adidas archive.', 1),
-(5, 1, 'NIKE CORTEZ (BLACK)', 'image\\shoes\\B_NikeCortez.jpg', 'image\\shoes\\NikeCortezStory.jpg', 100, 'The Nike Classic Cortez Shoe is Nike original running shoe, designed by Bill Bowerman and released in 1972. This version features a leather and synthetic leather construction for added durability.', 2),
-(6, 1, 'NIKE PRESTO (BLACK)', 'image\\shoes\\BW_NikeReact.jpg', 'image\\shoes\\NikeReactStory.jpg', 300, 'Back in early 2000, “Shady Milkman” and “Rogue Kielbasa” read more as eccentric menu items than monikers for groundbreaking running shoes. But that was before an irreverent advertising campaign, designed to underscore the disruptive nature of the newly released Nike Air Presto, turned notions of performance footwear on their heads.', 2),
-(7, 2, 'NIKE AIR MAX 98 (WHITE) ', 'image\\shoes\\BW_NikeReact.jpg', 'image\\shoes\\NikeReactStory.jpg', 300, 'The Air Max 98 rode the wave of its legendary predecessor, debuting with full-length visible Air and fluid design lines. Now it returns, sporting the same signature look and a new run of colours.', 2),
-(8, 2, 'NIKE AIRMAX 270 (WHITE) ', 'image\\shoes\\W_NikeAir.jpg', 'image\\shoes\\NikeAirMax270Story.jpg', 180, 'The Nike Air Max 270 Men Shoe is inspired by two icons of big Air: the Air Max 180 and Air Max 93. It features Nike biggest heel Air unit yet for a super-soft ride that feels as impossible as it looks', 2),
-(9, 2, 'ADIDAS OZWEEGO (WHITE&BLACK) ', 'image\\shoes\\WB_ozweego.jpg', 'image\\shoes\\WB_ozweegoStory.jpg', 100, 'Inspired by the original 1998 model, OZWEEGO reinvents iconic design elements for the present. This silhouette pays homage to the lightweight and comfortable 90’s cushion runner, offering a new interpretation from the adidas archive.', 1),
-(10, 2, 'ADIDAS OZWEEGO (WHITE&PINK) ', 'image\\shoes\\WP_ozwegoo.jpg', 'image\\shoes\\WP_AdidasOzwegooStory.jpg', 100, 'Inspired by the original 1998 model, OZWEEGO reinvents iconic design elements for the present. This silhouette pays homage to the lightweight and comfortable 90’s cushion runner, offering a new interpretation from the adidas archive.', 1),
-(11, 2, 'ULTRABOOST UNCAGED (White)', 'image\\shoes\\W_ultraboost.jpg', 'image\\shoes\\W_ultraboostStory.jpg', 220, 'These running shoes have a simplified design to give you a feeling of free and unrestricted movement. The shoes are built with an internally reinforced knit upper for a supportive fit. The responsive midsole and flexible outsole deliver a smooth and comfortable ride.', 1);
+(3, 2, 'ADIDAS OZWEEGO (BLACK)', 'image/shoes/adidas_ozweego_black.png', 'image/shoes/B_OzweegoStory.jpg', 100, 'Inspired by the original 1998 model, OZWEEGO reinvents iconic design elements for the present. This silhouette pays homage to the lightweight and comfortable 90?s cushion runner, offering a new interpretation from the adidas archive.', 1),
+(4, 1, 'ADIDAS OZWEEGO (BLACK LIGHT)', 'image/shoes/black_light.png', 'image\\shoes\\BL_Ozweego.jpg', 100, 'Inspired by the original 1998 model, OZWEEGO reinvents iconic design elements for the present. This silhouette pays homage to the lightweight and comfortable 90’s cushion runner, offering a new interpretation from the adidas archive.', 1),
+(5, 1, 'NIKE CORTEZ (BLACK)', 'image/shoes/nike_cortez-black.png', 'image\\shoes\\NikeCortezStory.jpg', 100, 'The Nike Classic Cortez Shoe is Nike original running shoe, designed by Bill Bowerman and released in 1972. This version features a leather and synthetic leather construction for added durability.', 2),
+(6, 1, 'NIKE PRESTO (BLACK)', 'image/shoes/presto.png', 'image\\shoes\\NikeReactStory.jpg', 300, 'Back in early 2000, “Shady Milkman” and “Rogue Kielbasa” read more as eccentric menu items than monikers for groundbreaking running shoes. But that was before an irreverent advertising campaign, designed to underscore the disruptive nature of the newly released Nike Air Presto, turned notions of performance footwear on their heads.', 2),
+(7, 2, 'NIKE AIR MAX 98 (WHITE) ', 'image/shoes/98.png', 'image\\shoes\\NikeReactStory.jpg', 300, 'The Air Max 98 rode the wave of its legendary predecessor, debuting with full-length visible Air and fluid design lines. Now it returns, sporting the same signature look and a new run of colours.', 2),
+(8, 2, 'NIKE AIRMAX 270 (WHITE) ', 'image/shoes/270.png', 'image\\shoes\\NikeAirMax270Story.jpg', 180, 'The Nike Air Max 270 Men Shoe is inspired by two icons of big Air: the Air Max 180 and Air Max 93. It features Nike biggest heel Air unit yet for a super-soft ride that feels as impossible as it looks', 2),
+(9, 2, 'ADIDAS OZWEEGO (WHITE&BLACK) ', 'image/shoes/adidas_ozweego_white_black.png', 'image\\shoes\\WB_ozweegoStory.jpg', 100, 'Inspired by the original 1998 model, OZWEEGO reinvents iconic design elements for the present. This silhouette pays homage to the lightweight and comfortable 90’s cushion runner, offering a new interpretation from the adidas archive.', 1),
+(10, 2, 'ADIDAS OZWEEGO (WHITE&PINK) ', 'image/shoes/adidas_ozweego _white_pink.png', 'image\\shoes\\WP_AdidasOzwegooStory.jpg', 100, 'Inspired by the original 1998 model, OZWEEGO reinvents iconic design elements for the present. This silhouette pays homage to the lightweight and comfortable 90’s cushion runner, offering a new interpretation from the adidas archive.', 1),
+(11, 2, 'ULTRABOOST UNCAGED (White)', 'image/shoes/ultraboost_uncaged.png', 'image\\shoes\\W_ultraboostStory.jpg', 220, 'These running shoes have a simplified design to give you a feeling of free and unrestricted movement. The shoes are built with an internally reinforced knit upper for a supportive fit. The responsive midsole and flexible outsole deliver a smooth and comfortable ride.', 1);
 
 --
 -- Indexes for dumped tables
