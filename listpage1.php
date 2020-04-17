@@ -15,6 +15,7 @@ require_once('./dbshoes.php');
 			<a href="home.php"><img src="image/logo.png" alt="loading" class="logo"></a>
 			
 			<form action="" method="GET" class="search">
+			
 			<input type="text"  name="key" placeholder="search"style="width: 60%;; font-size: 30px;" ><input type="submit" name="search" value="search" style=" font-size: 30px;  "></form>
 		</div>
 
