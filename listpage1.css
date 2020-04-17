@@ -37,7 +37,7 @@ body
 }
 .submit
 {
-	porition: relative;
+	position: relative;
 	font-size: 30px;
 	float: right;
 	width: 20%;
