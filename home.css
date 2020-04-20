@@ -19,29 +19,36 @@ li,a{
 }
 
 header{
-    display: flex;
-    justify-content: ;
-    align-items: center;
     padding: 10px 5%;
-	background-color: var(--nav-bar);
-	
+	background-color: #121212;
 	position: fixed;
     width: 100%;
-    z-index: 999;
+	z-index: 999;
+	display: block;
+	padding-bottom: 0;
 }
 
-.logo{
-    cursor: pointer;
+ul{
+	text-align: center;
+	
+}
+
+.bar{
+	display: inline-block;
+	padding: 0 15px;
+	margin: 14px 0;
 }
 
 .nav_links{
-    list-style: none;
+	list-style: none; 
+	text-align: center;
+	padding-inline-start: 0;
 }
+
 
 .nav_links li{
     display: inline-block;
     padding: 0 20px;
-    
 }
 
 .nav_links li a{
@@ -64,8 +71,11 @@ body{
 }
 
 .logo{
-    padding-top: 5px;
-    width: 120px;
+	width: 120px;
+	height: 50px;
+	cursor: pointer;
+	float: left;
+	position: absolute;
 }
 
 .logo:hover{
@@ -73,43 +83,55 @@ body{
 }
 
 .cart-logo{
-    width: 50px;
+	width: 50px;
+	height: 50px;
+	padding: 0 10px;
+	transition: all .3s ease 0s;
+	border-radius: 3px;
+	margin-top: 4px;
 }
 
 .cart-logo:hover{
-    opacity: .8;
+	opacity: .8;
+	background-color:  rgb(53, 53, 53);
 }
 
-.search-container {
+
+.search-container{
+	border-radius: 1000px;
+	background-color: white;
 	float: right;
+	margin-top: 12px;
 }
-  
-header input[type=text] {
-	padding: 6px;
-	margin-top: 8px;
-	font-size: 17px;
+
+.input {
+	padding: 0px;
+	font-size: 14px;
 	border: none;
-	border-radius: 3px;
+	border-radius: 100px;
+	line-height: 32px;
+	transition: .4s;
 }
   
 .search-container button {
-	float: right;
-	padding: 16px 18px;
-	margin-top: 8px;
-	margin-right: 13px;
-	background: #ddd;
+	float: left;
+	padding: 4px 10px;
+	background:white;
 	font-size: 17px;
 	border: none;
 	cursor: pointer;
-	border-radius: 3px;
- }
-  
-.search-container button:hover {
-	background: #ccc;
+	border-radius: 1000px;
+	font-size: 20px;
 }
 
+.search-button{
+	color: var(--nav-bar);
+}
+
+ 
 .bcontent {
 	padding: 5%;
+	text-align-last: center;
 }
 
 .shop-now
@@ -117,25 +139,33 @@ header input[type=text] {
 	text-decoration: none;
 	color: white;
 	position: center;
-	font-size: 30px;
+	font-size: 20px;
+	font-weight: 500;
 	font-family: "Montserrat", sans-serif;
 	
-	padding: 5px 25px;
-    background-color: black;
+	padding: 0 20px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+    background-color: transparent;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     cursor: pointer;
-    transition: all .3s ease 0s;
-
-	align-items: center;
-	
-    font-weight: 500;
-    
-
+	transition: all .3s ease 0s;
+	position: absolute;
+	margin-top: 4px;
 }
 
 .shop-now:hover{
 	background-color: rgb(53, 53, 53);
+}
+
+.row1{
+	margin-bottom: 10px;
+}
+
+
+.row2{
+	border-top: 0.3px solid grey;
 }
 
 
@@ -165,4 +195,3 @@ nav a.bar:hover::before{
 }
 
 /* End of hovering white bar */
-
