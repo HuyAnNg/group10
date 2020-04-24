@@ -12,7 +12,7 @@ require_once('./dbshoes.php');
 <body class="webpage">
 	<div>
 		<div class="header" > 
-			<a href="Assigment 2 listpage1.php"><img src="image/logo.png" alt="loading" class="logo"></a>
+			<a href="listpage1.php"><img src="image/logo.png" alt="loading" class="logo"></a>
 			<img src="image/cart_empty.png" alt="loading" class="cartLogo">
 			<input type="text" class="search" placeholder="search">
 		</div>
