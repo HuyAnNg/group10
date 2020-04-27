@@ -76,7 +76,7 @@ require_once('./dbshoes.php');
 			<div class="login">
 				<a href="login.php">Log In as Admin?</a>
 			</div>
-			
+			 
 		</div>
 		
 		<div class="prod-area">

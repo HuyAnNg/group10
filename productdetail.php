@@ -7,16 +7,53 @@
 require_once('./dbshoes.php');
 
  ?>
-<link rel="stylesheet" href="adidas-ozwegoo.css">
+<link rel="stylesheet" href="product-detail.css">
 <link rel="icon" href="image/Icon.png" type="image/gif" sizes="16x16">
-<body class="webpage">
-	<div>
-		<div class="header"> 
-				
-			<a href="listpage1.php"><img src="image/logo.png" alt="loading" class="logo"></a>
-			<input type="text" class="search" placeholder="search">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<header class="header">
+		
+		<div class="row1">
+			<a href="home.php"><img src="image/logo.svg" alt="loading" class="logo"></a>
+		
+			<nav class="nav_links">
+				<ul class="ul">
+					<li><a class="bar" href="#">ABOUT</a></li>
+					<li><a class="bar" href="#">SERVICES</a></li>
+					<li><a class="bar" href="#">CONTACT US</a></li>
+				</ul>
+			</nav>
 		</div>
-		<div class="left">
+
+
+
+		<div class="row2">
+			<a href="#"><img src="image/cart_empty.svg" alt="loading" class="cart-logo"></a>
+				
+			<div class="search-container">
+				<form action="#">
+					<button class="search-button" type="submit"><i class="fa fa-search"></i></button>
+					<input class="input" type="text" placeholder="Search" name="search">
+				</form>
+			</div>
+				  
+			<a href="listpage1.php"><button class="shop-now">BACK TO SHOP</button></a>
+		
+		</div>
+
+		<label for="nav-toggle" class="nav-toggle-label">
+            <span style="color: white"></span>
+        </label>
+</header>
+
+<body>
+	
+	<div class="offset-header"></div>
+	<div class="offset"></div>
+
+	<div class="body">
+		
+		<div>
 			<?php 
 			if (isset($_GET['productid'])) {
 				# code...
@@ -30,24 +67,20 @@ require_once('./dbshoes.php');
 					$rows= query($sql);
 					for ($i=0; $i < count($rows); $i++) { 
 			 ?>
-			<div class="shoesimg"><img src="<?=$rows[0][3]?>" alt="loading" width="550" height="550" ></div>
+			<div class="shoesimg"><img src="<?=$rows[0][3]?>" alt="loading"></div>
 		</div>
 
 
-		<div class="right">
+		<div class="info">
 		
-			<div class="font" style="font-size: 30px"><?=$rows[$i][2]?></div><br>
-			<div class="font" style="margin-right: 100px; text-align: justify;"><?=$rows[$i][6]?></div>
-			<br>
-			<div align="center"><img src="<?=$rows[0][4]?>" alt="loading" width="300" height="300" ></div>
-			<br>
-			<div class="font" align="center">Price: $<?=$rows[0][5]?> </div>
-			 <br>
+			<div class="shoes-title"><?=$rows[$i][2]?></div>
 			
-			<div align="center"><a href="cart.php?productid=<?=$productid[$i][0]?>"><input type="submit" value="Add to cart" name="add"  onclick="myFunction()" ></a> </div>
-		<?php } ?>
-			<div id="snackbar">Added to cart!</div>
-		
+			<div class="price">Price: $<?=$rows[0][5]?> </div>
+
+			<div class="shoes-info""><?=$rows[$i][6]?></div>
+
+			<div ><a href="cart.php?productid=<?=$productid[$i][0]?>"><button class="add-to-cart" onclick="myFunction()" >ADD TO CART</button></a> </div>
+			<?php } ?>
 			</div>
 			
 			<script>
@@ -57,8 +90,7 @@ require_once('./dbshoes.php');
 			  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 			}
 			</script>
-
-</div>
-</div>
+		</div>
+	</div>
 </body>
 </html>
