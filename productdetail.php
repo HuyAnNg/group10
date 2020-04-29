@@ -79,18 +79,18 @@ require_once('./dbshoes.php');
 
 			<div class="shoes-info""><?=$rows[$i][6]?></div>
 
-			<div ><a href="cart.php?productid=<?=$productid[$i][0]?>"><button class="add-to-cart" onclick="myFunction()" >ADD TO CART</button></a> </div>
+			<a href="cart.php?productid=<?=$productid[$i][0]?>"><button id="snackbar"  class="add-to-cart" onclick="myFunction()" >ADD TO CART</button></a>
 			<?php } ?>
-			</div>
+		</div>
 			
-			<script>
+		<script>
 			function myFunction() {
 			  var x = document.getElementById("snackbar");
 			  x.className = "show";
 			  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 			}
-			</script>
-		</div>
+		</script>
+		
 	</div>
 </body>
 </html>

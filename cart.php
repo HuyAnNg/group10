@@ -7,20 +7,55 @@
 require_once('./dbshoes.php');
 
  ?>
-<link rel="stylesheet" href="Cart_style.css">
+<link rel="stylesheet" href="cart-style.css">
 <link rel="icon" href="image/Icon.png" type="image/gif" sizes="16x16">
-<body class="webpage">
-	<div>
-		<div class="header" > 
-			<a href="listpage1.php"><img src="image/logo.png" alt="loading" class="logo"></a>
-			<img src="image/cart_empty.png" alt="loading" class="cartLogo">
-			<input type="text" class="search" placeholder="search">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<header class="header">
+		
+		<div class="row1">
+			<a href="home.php"><img src="image/logo.svg" alt="loading" class="logo"></a>
+		
+			<nav class="nav_links">
+				<ul class="ul">
+					<li><a class="bar" href="#">ABOUT</a></li>
+					<li><a class="bar" href="#">SERVICES</a></li>
+					<li><a class="bar" href="#">CONTACT US</a></li>
+				</ul>
+			</nav>
 		</div>
 
-		<div class="cartMid">
-			<div class="yourcart">YOUR CART</div>
-		<br>
-		<div>
+
+
+		<div class="row2">
+			<a href="#"><img src="image/cart_empty.svg" alt="loading" class="cart-logo"></a>
+				
+			<div class="search-container">
+				<form action="#">
+					<button class="search-button" type="submit"><i class="fa fa-search"></i></button>
+					<input class="input" type="text" placeholder="Search" name="search">
+				</form>
+			</div>
+				  
+			<a href="listpage1.php"><button class="shop-now">BACK TO SHOP</button></a>
+		
+		</div>
+
+		<label for="nav-toggle" class="nav-toggle-label">
+            <span style="color: white"></span>
+        </label>
+		
+	
+</header>
+
+<body>
+	
+	<div class="offset-header"></div>
+
+	<div class="yourcart"><h1>YOUR CART</h1></div>
+	
+	<div class="body">
 			<table class="table">
 				<tr>
 					
@@ -40,7 +75,7 @@ require_once('./dbshoes.php');
 						<th class="productname">$<?=$products[$i][5]?></th>
 					<?php } ?>
 
-						<th ><a href=""class="notextdecor">Delete</a></th>
+						<th ><a href="">Delete</a></th>
 				</tr>
 			<?php  ?>
 			</table>
@@ -55,8 +90,13 @@ require_once('./dbshoes.php');
 				# code...
 			
 			?>
-			<div align="center"><a href="orders.php" class="checkout">CHECK OUT </a>  </div>
-		<?php echo $sql;}  ?>
-	<?php  ?>
-		</div>
-		
+			
+			<?php echo $sql;}  ?>
+			
+			<?php  ?>
+	</div>
+
+	<div class="check-out-div"><a href="orders.php" class="checkout"><button class="check-out">CHECK OUT</button></a></div>
+</body>
+
+</html>

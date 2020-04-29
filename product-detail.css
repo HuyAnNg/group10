@@ -262,6 +262,13 @@ nav a.bar:hover::before{
 	font-family: "Montserrat", sans-serif;
 	background-color: transparent;
 	padding: 10px;
+	transition: all .3s ease 0s;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.add-to-cart:hover{
+	background-color: rgb(209, 209, 209);
 }
 
 .body{
