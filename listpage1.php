@@ -65,7 +65,7 @@ require_once('./dbshoes.php');
 				
 						for ($i=0; $i < count($rows) ; $i++) {
 						 ?>
-							<li><a href="listpage1.php?catid=<?=$rows[$i][0]?>"><?=$rows[$i][1]?></a></li>
+							<div class="div-li"><li><a href="listpage1.php?catid=<?=$rows[$i][0]?>"><?=$rows[$i][1]?></a></li></div>
 							<?php } ?>
 						</ul>
 					</div>	

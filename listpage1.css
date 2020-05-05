@@ -86,7 +86,6 @@ ul{
 	opacity: .8;
 }
 
-
 .cart-logo{
 	width: 50px;
 	height: 50px;
@@ -233,7 +232,7 @@ nav a.bar:hover::before{
 	margin: 0;
 	display: block;
 	text-align: left;
-	font-size: 22px;
+	font-size: 20px;
 	padding: 5px;
 	border-radius: 3px;
 	transition: all .3s;
@@ -247,11 +246,6 @@ nav a.bar:hover::before{
 	text-decoration: none;
 	color: black;
 	font-family: "Helvetica Neue";
-	transition: opacity .6s ease 0s;
-}
-
-.wall-list a:hover{
-	opacity: 0.8;
 }
 
 div.login a{
@@ -284,6 +278,7 @@ a.shoesname{
 .prod-pic:hover{
 	opacity: 0.8;
 }
+
 .price{
 	margin-left:300px;
 }
