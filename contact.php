@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
-<?php ?>
-<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="contact.css">
 <link rel="icon" href="image/Icon.png" type="image/gif" sizes="16x16">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 
 <header class="header">
 	
@@ -46,49 +41,13 @@
 
 </header>
 
+<div class="offset-header"></div>
 
 <body>
-	<div class="offset-header"></div>
-
-	<div class="offset"></div>
-
-	<div>
-		<div class="login"><h1>LOGIN</h1></div> 
-		
-		<form action="#" method="POST">
-		<div align="center">
-			<div><input class="input-login" type="text" name="user" class="input" placeholder="Account"></div>
-		
-			<div><input class="input-login" type="password" name="password" class="input" placeholder="Password"></div>
-
-			<div><input class="login-button" type="submit" value="Log In" name="submit"></div>
-	<?php 	
-	require_once('./dbshoes.php');
-	
-if(isset($_POST['user']) && isset($_POST['password'])){
-	$u = $_POST['user'];
-	$p = $_POST['password'];
-	$sql = "select * from account where usernames ='" . $u . "'and password='". $p."'";
-	$rows = query($sql);
-	  
-	if(count($rows)>0 ){
-      $_SESSION['us'] = $u;
-      echo "login success";
-  		header("location:admin-page.php");
-  		echo $sql;
-  	}
-  	else{
-  		
-  		echo $sql;
-  	}
-}
-   ?>	
-   </form>
-   	
-
-		</div>
-	</div>
+   <div class="contact-div"><h1>Contact us</h1></div>
+   <p>Nguyễn Huy An</p>
+   <p>Đinh Nguyễn Việt Hưng</p>
+   <p>Phạm Long Vũ</p>
 </body>
-</html>
-		
 
+</html>

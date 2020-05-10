@@ -17,9 +17,9 @@
 	
 		<nav class="nav_links">
 			<ul class="u">
-				<li><a class="bar" href="#">ABOUT</a></li>
-				<li><a class="bar" href="#">SERVICES</a></li>
-				<li><a class="bar" href="#">CONTACT US</a></li>
+				<li><a class="bar" href="about.php">ABOUT</a></li>
+				<li><a class="bar" href="services.php">SERVICES</a></li>
+				<li><a class="bar" href="contact.php">CONTACT US</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -47,9 +47,9 @@
 
 </header>
 
-<body>
+<div class="offset-header"></div>
 
-	<div class="offset-header"></div>
+<body>
 
 	<div class="center-img"><a href="listpage1.php"><img class="just-do-it fade-in" src="image/just-do-it.png" alt="just do it"></a></div>
 

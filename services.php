@@ -2,13 +2,12 @@
 <html>
 <head>
 	<title></title>
+	
+	<meta charset="utf-8">
 </head>
-<?php 
-require_once('./dbshoes.php');
 
- ?>
-<link rel="stylesheet" href="cart-style.css">
-<link rel="icon" href="image/Icon.png" type="image/gif" sizes="16x16">
+<link rel="stylesheet" href="services.css">
+<link rel="icon" href="image/shoes/back.png" type="image/gif" sizes="16x16">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <header class="header">
@@ -51,9 +50,6 @@ require_once('./dbshoes.php');
 <div class="offset-header"></div>
 
 <body>
-
-	<div class="yourcart"><h1>THANKS FOR BUYING WITH US!</h1></div>
-
-	<div class="return-div"><a href="listpage1.php"><button class="return">RETURN TO SHOP</button></a>
+   <h1>Services not avaiable at this time.</h1>
 </body>
 </html>
