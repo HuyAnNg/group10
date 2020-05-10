@@ -68,7 +68,7 @@ require_once('./dbshoes.php');
 					$rows= query($sql);
 					for ($i=0; $i < count($rows); $i++) { 
 			 ?>
-			<div class="shoesimg"><img src="<?=$rows[0][3]?>" alt="loading"></div>
+			<div class="shoesimg"><img src="../<?=$rows[0][3]?>" alt="loading"></div>s
 		</div>
 
 

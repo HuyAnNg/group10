@@ -105,15 +105,14 @@ require_once('./dbshoes.php');
 								
 							<th>
 								<a class="shoesname" href="productdetail.php?productid=<?=$name[$i][0]?>" >
-									<img src="<?=$name[$i][3]?>" alt="loading" width="300" height="300"class="prod-pic">
+									<img src="../<?=$name[$i][3]?>" alt="loading" width="300" height="300"class="prod-pic">
 									<div class="shoesname"><?=$name[$i][2]?></div>
 								</a>
 							</th>
 								
-								<th >
-									<div style="margin-left: 300px;" >Price: $<?=$name[$i][5]?></div>
-
-								</th>
+							<th >
+								<div style="margin-left: 300px;" >Price: $<?=$name[$i][5]?></div>
+							</th>
 								
 
 							<?php } ?>

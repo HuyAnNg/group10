@@ -69,7 +69,7 @@ require_once('./dbshoes.php');
 						 	for ($i=0; $i < count ($products) ; $i++) { 
 						 		
 						  ?>
-						<th><img src="<?=$products[$i][3]?>"  class="productimg"></th>
+						<th><img src="../<?=$products[$i][3]?>"  class="productimg"></th>
 						<th class="productname"><?=$products[$i][2]?></th>
 						<th class="productname">$<?=$products[$i][5]?></th>
 					<?php } ?>
