@@ -6,14 +6,13 @@
 	<meta charset="utf-8">
 </head>
 
-<link rel="stylesheet" href="home.css">
-<link rel="icon" href="image/shoes/back.png" type="image/gif" sizes="16x16">
+<link rel="stylesheet" href="../css/home.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <header class="header">
 	
 	<div class="row1">
-		<a href="home.php"><img src="image/logo.svg" alt="loading" class="logo"></a>
+		<a href="home.php"><img src="../image/logo.svg" alt="loading" class="logo"></a>
 	
 		<nav class="nav_links">
 			<ul class="u">
@@ -27,7 +26,7 @@
 
 
 	<div class="row2">
-		<a href="#"><img src="image/cart_empty.svg" alt="loading" class="cart-logo"></a>
+		<a href="#"><img src="../image/cart_empty.svg" alt="loading" class="cart-logo"></a>
 			
 		<div class="search-container">
 			<form action="#">
@@ -51,24 +50,24 @@
 
 <body>
 
-	<div class="center-img"><a href="listpage1.php"><img class="just-do-it fade-in" src="image/just-do-it.png" alt="just do it"></a></div>
+	<div class="center-img"><a href="listpage1.php"><img class="just-do-it fade-in" src="../image/just-do-it.png" alt="just do it"></a></div>
 
 	<div class="center-img">
-		<a href="listpage1.php"><img class="vertical" src="image/lina-preview.jpeg" alt="li na"></a>
+		<a href="listpage1.php"><img class="vertical" src="../image/lina-preview.jpeg" alt="li na"></a>
 		
-		<a href="listpage1.php"><img class="vertical" src="image/vertical-preview.png" alt="vertical"></a>
+		<a href="listpage1.php"><img class="vertical" src="../image/vertical-preview.png" alt="vertical"></a>
 	</div>
 
 	<div class="center-img">
-		<a href="listpage1.php"><img class="shoes-preview" src="image/nike-white-preview.png" alt="nike preview"></a>
+		<a href="listpage1.php"><img class="shoes-preview" src="../image/nike-white-preview.png" alt="nike preview"></a>
 	</div>
 
 	<div class="center-img">
-		<a href="listpage1.php"><img class="shoes-preview" src="image/ozweego-preview.png" alt="nike preview"></a>
+		<a href="listpage1.php"><img class="shoes-preview" src="../image/ozweego-preview.png" alt="nike preview"></a>
 	</div>
 
 	<div class="center-img">
-		<a href="listpage1.php"><img class="shoes-preview" src="image/ozweego-preview-2.png" alt="nike preview"></a>
+		<a href="listpage1.php"><img class="shoes-preview" src="../image/ozweego-preview-2.png" alt="nike preview"></a>
 	</div>
 
 	<p class="content">

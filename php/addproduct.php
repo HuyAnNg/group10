@@ -2,7 +2,7 @@
 <head>
 	<title></title>
 </head>
-<link rel="stylesheet" href="addproduct-style.css">
+<link rel="stylesheet" href="../css/addproduct-style.css">
 <?php  
 	require_once('./dbshoes.php');
 
@@ -24,7 +24,7 @@
 
 <body>
 	<div class="header"> 
-			<a href="admin-page.php"><img src="image/logo.png" alt="loading" class="logo"></a>
+			<a href="admin-page.php"><img src="../image/logo.png" alt="loading" class="logo"></a>
 		</div>
 	<div class="content">
 		<div class="left" align="center" >ADD PRODUCT</div><br>

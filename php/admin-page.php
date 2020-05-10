@@ -3,7 +3,7 @@
 <head>
 	<title></title>
 </head>
-<link rel="stylesheet" href="admin-page.css">
+<link rel="stylesheet" href="../css/admin-page.css">
 <?php  
 	require_once('./dbshoes.php');
 
