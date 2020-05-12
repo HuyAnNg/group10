@@ -203,3 +203,28 @@ nav a.bar:hover::before{
 .offset-header{ /* Offset */
 	padding-top: 125.3px;
 }
+
+.offset{
+	padding-top: 20px;
+}
+
+/* Body section */
+
+.about-us{
+	font-size: 20px;
+	font-family: 'Montserrat';
+	text-align: center;
+}
+
+.p-content{
+	width: 800px;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
+}
+
+.p-content p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 18px;
+	text-align: justify;
+}

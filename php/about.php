@@ -46,7 +46,35 @@
 </header>
 
 <div class="offset-header"></div>
+<div class="offset"></div>
 
 <body>
+
+	<div class="about-us">
+		<h1>ABOUT US</h1>
+	</div>
+
+	<div class="offset"></div>
+
+	<div class="p-content">
+		<p>
+			The shoes are becoming more and more popular not only because they are essential items in life but also because of the variety of designs and shapes. Many brands like Nike, Adidas, Dr. Martens,... are becoming very famous not only the variety of shapes and designs but also how convenient in each of shoes. So, in order to bring not only the convinient but also how far the distance is, we develop a website that the customers, with just a click, they can buy what they want without going outside.<br><br>
+			Our website are just like normal shopping online websites, provides a feature theme, easy for users in all age to seek the information of the shoes they like: kinds of shoes, brands, the cost,...<br><br>
+			The website will provide functions just like other shopping online website:
+			<br><br>
+			+) Menu: a brief view of shoes and specific ones in each brands
+			<br><br>
+			+) Review, comments of shoes.
+			<br><br>
+			+) Customers can ask questions and receive answers.
+			<br><br>
+			In operating environments, we will use Xampp Server to run.
+			<br>
+			<br>
+			We will use html/css for front-end, and for back-end, we will use PHP and SQL database.
+			<br>
+			<br>
+		</p>
+	</div>
 </body>
 </html>
