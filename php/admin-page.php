@@ -16,7 +16,7 @@
 ?>
 <body>
 	<div class="header"> 
-			<a href="listpage1.php"><img src="image/logo.png" alt="loading" class="logo"></a>
+			<a href="listpage1.php"><img src="../image/logo.png" alt="loading" class="logo"></a>
 		</div>
 		<div>
 			<div class="left" align="center">
@@ -29,7 +29,7 @@
 					for ($i=0; $i < count($rows); $i++)
 					{
 						?>
-					<li class="noliststyle" style=" margin-top: 10px " ><a href="admin-page.php?CatId=<?=$rows[$i][0]?>" class="notextdecor"><?=$rows[$i][1]?></a></li>
+					<li class="noliststyle" style="margin-top: 10px " ><a href="admin-page.php?CatId=<?=$rows[$i][0]?>" class="notextdecor"><?=$rows[$i][1]?></a></li>
 					
 					<?php
 					 } 
@@ -59,8 +59,8 @@
 					<tr align="center">
 						<td><?=$rows[$i][1]?></td>
 						<td class="col2"><?=$rows[$i][2]?></td>
-						<td class="colimg"><img src="<?=$rows[$i][3]?>" width="50%" alt=""></td>
-						<td class="colimg"><img src="<?=$rows[$i][4]?>" width="75%" alt=""></td>
+						<td class="colimg"><img src="../<?=$rows[$i][3]?>" width="50%" alt=""></td>
+						<td class="colimg"><img src="../<?=$rows[$i][4]?>" width="75%" alt=""></td>
 						<td><?=$rows[$i][5]?></td>
 						<td class="col4"><?=$rows[$i][6]?></td>
 						<td class="col5">

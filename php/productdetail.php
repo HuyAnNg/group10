@@ -68,7 +68,7 @@ require_once('./dbshoes.php');
 					$rows= query($sql);
 					for ($i=0; $i < count($rows); $i++) { 
 			 ?>
-			<div class="shoesimg"><img src="../<?=$rows[0][3]?>" alt="loading"></div>s
+			<div class="shoesimg"><img src="../<?=$rows[0][3]?>" alt="loading"></div>
 		</div>
 
 
@@ -78,7 +78,7 @@ require_once('./dbshoes.php');
 			
 			<div class="price">Price: $<?=$rows[0][5]?> </div>
 
-			<div class="shoes-info""><?=$rows[$i][6]?></div>
+			<div class="shoes-info"><?=$rows[$i][6]?></div>
 
 			<a href="cart.php?productid=<?=$productid[$i][0]?>"><button id="snackbar"  class="add-to-cart" onclick="myFunction()" >ADD TO CART</button></a>
 			<?php } ?>

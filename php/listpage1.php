@@ -56,6 +56,7 @@ require_once('./dbshoes.php');
 
 	<div class="body">
 		<div class="wall">
+			
 			<div class="wall-nav">
 					<div class="wall-list">
 						<ul><?php 
@@ -79,48 +80,39 @@ require_once('./dbshoes.php');
 		</div>
 		
 		<div class="prod-area">
+			<div>
 				
-				<div>
-						<table class="prod-table">
-							
-							<?php 
-								if (isset($_GET['catid'])) {
-									# code...
-									$sql = "select * from product where CatId=".$_GET['catid'];
-								}
-								elseif(isset($_GET['search']))
-								{
-									$key = $_GET['key'];
-									$sql = "Select * From product where ProductName like '%" . $key . "%'";
-								}
-								else
-								{
-									$sql = "Select * from product";
-								}
-								$name = query($sql);
-								for ($i=0; $i <count($name) ; $i++) { 
-							 ?>
-							
-							<tr style="width: 1000px">
-								
-							<th>
-								<a class="shoesname" href="productdetail.php?productid=<?=$name[$i][0]?>" >
-									<img src="../<?=$name[$i][3]?>" alt="loading" width="300" height="300"class="prod-pic">
-									<div class="shoesname"><?=$name[$i][2]?></div>
-								</a>
-							</th>
-								
-							<th >
-								<div style="margin-left: 300px;" >Price: $<?=$name[$i][5]?></div>
-							</th>
-								
-
-							<?php } ?>
-								
-							</tr>
-						</table>
+				<?php 
+					if (isset($_GET['catid'])) {
+						# code...
+						$sql = "select * from product where CatId=".$_GET['catid'];
+					}
+					elseif(isset($_GET['search']))
+					{
+						$key = $_GET['key'];
+						$sql = "Select * From product where ProductName like '%" . $key . "%'";
+					}
+					else
+					{
+						$sql = "Select * from product";
+					}
+					$name = query($sql);
+					for ($i=0; $i <count($name) ; $i++) { 
+				?>
+				
+					
+				
+				<div class="prod-cell">
+					<a class="shoesname" href="productdetail.php?productid=<?=$name[$i][0]?>">
+						<img src="../<?=$name[$i][3]?>" alt="loading" width="300" height="300"class="prod-pic">
+						<div class="shoesname"><?=$name[$i][2]?></div>
+						<div class="price-div">Price: $<?=$name[$i][5]?></div>
+					</a>
 				</div>
+				
+				<?php } ?>
+			</div>	
 		</div>
-
+	</div>
 </body>
 </html>

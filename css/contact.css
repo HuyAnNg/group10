@@ -203,3 +203,24 @@ nav a.bar:hover::before{
 .offset-header{ /* Offset */
 	padding-top: 125.3px;
 }
+
+.offset{
+	padding-top: 15px;
+}
+
+/* Body area */
+
+.contact-header{
+	font-family: 'Montserrat';
+	text-align: center;
+	font-size: 20px;
+}
+
+.contact-detail{
+	font-family: 'Mako';
+	text-align: center;
+}
+
+.contact-detail p{
+	font-size: 20px;
+}

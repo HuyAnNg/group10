@@ -221,6 +221,7 @@ nav a.bar:hover::before{
 
 .wall{
 	padding-left: 50px;
+	width: 220px;
 }
 
 .wall-list ul{
@@ -256,6 +257,7 @@ div.login a{
 
 .prod-area{
 	padding-left: 80px;
+	width: 1200px;
 }
 
 div.shoesname{
@@ -263,6 +265,11 @@ div.shoesname{
 	transition: opacity .6s ease 0s;
 	text-decoration: none;
 	padding: 10px 0px 10px 0px;
+	width: 300px;
+}
+
+.price-div{
+	width: 300px;
 }
 
 a.shoesname{
@@ -287,4 +294,8 @@ a.shoesname{
 	display: flex;
 }
 
-
+.prod-cell{
+	padding: 10px;
+	width: 320px;
+	display: inline-block;
+}

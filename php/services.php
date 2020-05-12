@@ -48,7 +48,13 @@
 
 <div class="offset-header"></div>
 
+<div class="offset"></div>
+
 <body>
-   <h1>Services not avaiable at this time.</h1>
+	<div class="sorry"><h1>We are sorry.</h1></div>
+
+	<div class="offset"></div>
+
+   	<div class="services-div"><p>Services not available at this time.</p></div>
 </body>
 </html>
