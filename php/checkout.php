@@ -21,8 +21,7 @@
 
 
   ?>
-<link rel="stylesheet" href="checkout-style.css">
-<link rel="icon" href="image/Icon.png" type="image/gif" sizes="16x16">
+<link rel="stylesheet" href="../css/checkout-style.css">
 <body class="webpage">
 	<div>
 		<div class="header" > 
