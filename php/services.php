@@ -12,7 +12,7 @@
 <header class="header">
 	
 	<div class="row1">
-		<a href="home.php"><img src="../image/logo.svg" alt="loading" class="logo"></a>
+		<a href="index.php"><img src="../image/logo.svg" alt="loading" class="logo"></a>
 	
 		<nav class="nav_links">
 			<ul class="u">
