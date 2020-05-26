@@ -52,6 +52,7 @@
    <div class="contact-detail">
 		<p>Nguyễn Huy An</p>
 		<p>Đinh Nguyễn Việt Hưng</p>
+	        <p>Phạm Minh Kiên</p>
 		<p>Phạm Long Vũ</p>
    </div>
 </body>
