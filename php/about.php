@@ -74,7 +74,22 @@
 			We will use html/css for front-end, and for back-end, we will use PHP and SQL database.
 			<br>
 			<br>
-		</p>
+	</div>
+
+	<h1 class="about-us">Contributions</h1>
+
+	<div class="p-content">
+		<p>
+			<br><br>
+			Nguyễn Huy An: HTML, PHP coding, initial testing, project lead
+			<br><br>
+			Đinh Nguyễn Việt Hưng: HTML coding and Css styling for the website, secondary testing. Video recorder, voice over and editing
+			<br><br>
+			Phạm Long Vũ: Reporter, planning, styling consultant, resource/database gathering(images, pricing, description,etc), spell check, UI/UX testing
+			<br><br>
+			Phạm Minh Kiên: Testing, design helper, structure advisor
+			<br><br>
+		</p>	
 	</div>
 </body>
 </html>
