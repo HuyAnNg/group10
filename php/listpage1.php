@@ -89,8 +89,8 @@ require_once('./dbshoes.php');
 					}
 					elseif(isset($_GET['search']))
 					{
-						$key = $_GET['key'];
-						$sql = "Select * From product where ProductName like '%" . $key . "%'";
+						$search = $_GET['search'];
+						$sql = "Select * From product where ProductName like '%" . $search . "%'";
 					}
 					else
 					{
