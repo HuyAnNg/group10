@@ -37,8 +37,7 @@
 					 <br>
 				 </div>
 				 <div ><a href="addproduct.php"class="notextdecor">ADD PRODUCT</a> </div><br>
-				 <div ><a href="history.php"class="notextdecor">HISTORY</a> </div><br>
-				 <div ><a href=""class="notextdecor">LOG OUT</a> </div>
+				 <div ><a href="index.php" class="notextdecor">LOG OUT</a> </div>
 				 	
 	 		</div>
 			<div class="right">
